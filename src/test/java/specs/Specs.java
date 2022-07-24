@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.with;
 import static listeners.CustomAllureListener.withCustomTemplates;
 
 public class Specs {
-    public static RequestSpecification request = with()
+    public static RequestSpecification reqresIn = with()
             .filter(withCustomTemplates())
             .baseUri("https://reqres.in")
             .log().uri()
