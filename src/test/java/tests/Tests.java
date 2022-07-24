@@ -5,6 +5,7 @@ import io.qameta.allure.Owner;
 import models.lombok.GenerateData;
 import models.lombok.MorpheusData;
 import models.lombok.UserData;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -110,7 +111,7 @@ public class Tests {
                 .log().status()
                 .log().body()
                 .spec(positiveSpec)
-                .body("support.url", is("https://reqres.in/#support-heading"));
+                .body("support.url", Matchers.is("https://reqres.in/#support-heading"));
     }
 
     @Owner("Никита")
@@ -125,7 +126,7 @@ public class Tests {
                 .log().status()
                 .log().body()
                 .spec(positiveSpec)
-                .body("data.first_name", is("Janet"));
+                .body("data.first_name",  Matchers.is("Janet"));
     }
 
 }
