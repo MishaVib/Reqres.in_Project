@@ -32,7 +32,7 @@ public class Tests {
                         .then()
                         .log().status()
                         .log().body()
-                        .statusCode(200)
+                        .spec(positiveSpec)
                         .extract().as(MorpheusData.class);
 
         assertThat(morpheusData.getName()).isEqualTo("Misha");
