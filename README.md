@@ -32,7 +32,7 @@
 ![Allure Report](images/allure_List.png)
 
 ### Графики
-![Allure Report](images/allure_Report2.png)
+![Allure Report](images/Allure_Report2.png)
 
 
 ### <img width="4%" title="Allure Report" src="images/icons/AllureTestOps.png"> Проект интегрирован с Allure TestOps
